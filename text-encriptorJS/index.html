@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Encrypt</title>
+    <link rel="shortcut icon" href="img/proteger.png" type="image/x-icon" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="encriptar">
+        <textarea name="texto" class="texto" id="texto" cols="30" rows="10" placeholder="Enter the text here"></textarea>
+        <div class="terminos">
+          <p>Only lowercase letters and no accents, symbols and numbers.</p>
+        </div>
+        <div class="botones">
+          <button class="btn-encriptar" type="button" onclick="encriptar()">
+            Encrypt
+          </button>
+          <input
+            type="button"
+            class="btn-desencriptar"
+            value="Decrypt"
+            onclick="desencriptar()"
+          />
+        </div>
+      </div>
+      <div class="encriptado">
+        <img src="img/chat-privado.png" alt="Decrypt" id="muñeco" title="decrypt" />
+        <div class="mensaje-encriptado" id="mensaje-encriptado">
+          <h2 id="titulo-mensaje">No Message Found.</h2>
+          <p id="parrafo">
+            Enter the text you want to encrypt or decrypt.
+          </p>
+        </div>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>
